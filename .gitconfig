@@ -1,0 +1,14 @@
+[filter "lfs"]
+	process = git-lfs filter-process # handles clean + smudge, avoids separate process per file, replaces large file contents with pointer file
+	required = true # enforces above rule to run
+[user]
+	name = Cristian Ordonez
+	email = cristianordonezrd@gmail.com
+[core]
+	editor = vim
+	safecrlf = true # prevents committing files with mixed line endings so no issues arise when creating text files on either mac/linux or windows
+	pager = cat
+[credential]
+	helper = osxkeychain
+[init]
+	defaultBranch = main
