@@ -1,0 +1,14 @@
+Host prod-app-nyc1
+    HostName 192.81.211.81
+    User root
+    IdentityFile ~/.ssh/id_rsa
+Host github.com
+    AddKeysToAgent yes
+    IdentityFile ~/.ssh/id_ed25519
+Host ubuntu-s-1vcpu-2gb-nyc1
+  Hostname 64.227.17.191
+  AddKeysToAgent yes
+  User root
+  UseKeychain yes
+  IdentityFile ~/.ssh/id_digital_ocean
+
